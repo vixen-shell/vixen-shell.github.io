@@ -1,10 +1,15 @@
 site_name: Vixen Shell Documentation
 site_url: https://vixen-shell.github.io
 
+nav:
+  - Welcome: index.md
+  - Install: install.md
+  - Commands: commands.md
+
 theme:
   name: material
-  logo: assets/vixen_logo.png
-  favicon: assets/vixen_logo.png
+  logo: assets/vixen_logo.svg
+  favicon: assets/vixen_logo.svg
   palette:
     scheme: slate
     primary: black
@@ -13,7 +18,13 @@ theme:
     - content.code.select
     - content.code.annotate
 
+extra_css:
+  - stylesheets/extra.css
+
 markdown_extensions:
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
@@ -22,8 +33,24 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.superfences
   - attr_list
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - md_in_html
+  - admonition
+  - pymdownx.details
 
+plugins:
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      slide_effect: slide
+      width: auto
+      height: auto
+      zoomable: true
+      draggable: true
+      auto_caption: false
+      caption_position: bottom
+      background: white
+      shadow: true
+      manual: false
+      
 repo_url: https://github.com/vixen-shell

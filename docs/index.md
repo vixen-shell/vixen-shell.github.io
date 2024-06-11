@@ -1,91 +1,74 @@
-# ![](assets/vixen_logo_md.png) Welcome to Vixen Shell
+<h1>
+    <img src="assets/vixen_logo.svg" alt="Vixen Logo" width=64 style="vertical-align: -40%; margin-right: 20px;">
+    Welcome to Vixen Shell
+</h1>
 
 ## Presentation
 
-The Vixen Shell project is an initiative dedicated to creating a highly customizable desktop environment for [Wayland](https://wayland.freedesktop.org/) users on Linux. Designed with a focus on development, it allows users to code the various components necessary to build their own desktop environment. This project is particularly useful for users of window managers such as [Sway](https://swaywm.org/) or [Hyprland](https://hyprland.org/).
+The **Vixen Shell** project is an initiative dedicated to creating a highly customizable desktop environment for [Wayland](https://wayland.freedesktop.org/) users on Linux. Designed with a focus on development, it allows users to code the various components necessary to build their own desktop environment. This project is particularly useful for users of window managers such as [Sway](https://swaywm.org/) or [Hyprland](https://hyprland.org/).
 
-Vixen Shell stands out by using [Python](https://www.python.org/) for the back-end, while the user interface (front-end) is developed with modern web technologies such as [React](https://fr.legacy.reactjs.org/), [TypeScript](https://www.typescriptlang.org/) and CSS.
+**Vixen Shell** stands out by using [Python](https://www.python.org/) for the back-end, while the user interface (front-end) is developed with modern web technologies such as [React](https://fr.legacy.reactjs.org/), [TypeScript](https://www.typescriptlang.org/) and CSS.
 
 The project was initially intended for [Hyprland](https://hyprland.org/), but during its development, its flexibility has allowed it to be adapted to other window managers. This is why, as you will discover by reading this documentation, there are pre-existing features dedicated to [Hyprland](https://hyprland.org/) in Vixen Shell's extras and many references and examples related to [Hyprland](https://hyprland.org/).
 
-### Prerequisites
+??? info "Prerequistes"
+    Before getting started with **Vixen Shell**, make sure you have the following:
 
-Before getting started with Vixen Shell, make sure you have the following:
+    1. **Operating System**:
+        - A Linux distribution compatible with Wayland (e.g., Ubuntu, Fedora, Arch Linux, [Manjaro Linux](https://manjaro.org/)).
 
-1. **Operating System**:
-    - A Linux distribution compatible with Wayland (e.g., Ubuntu, Fedora, Arch Linux, [Manjaro Linux](https://manjaro.org/)).
+    2. **Window Manager**:
+        - Sway, Hyprland, or any other window manager compatible with Wayland.
 
-2. **Window Manager**:
-    - Sway, Hyprland, or any other window manager compatible with Wayland.
+    3. **Languages and Technologies**:
+        - **Python**: Ensure Python is installed (version 3.8 or higher).
+        - **yarn**: For managing dependencies and building front-end components.
 
-3. **Languages and Technologies**:
-    - **Python**: Ensure Python is installed (version 3.8 or higher).
-    - **yarn**: For managing dependencies and building front-end components.
+    4. **Development Tools**:
+        - A code editor or IDE (Visual Studio Code is recommended).
+        - Git for version control (Recommended).
 
-4. **Development Tools**:
-    - A code editor or IDE (Visual Studio Code is recommended).
-    - Git for version control (Recommended).
+    5. **Permissions and Access**:
+        - Administrator or superuser access to install certain dependencies and perform system configurations.
 
-5. **Permissions and Access**:
-    - Administrator or superuser access to install certain dependencies and perform system configurations.
+## Under the Hood
 
-## Installation
+### Vixen core
 
-### Yarn
+- [**GTK3 (GIMP Toolkit 3)**](https://www.gtk.org/): GTK3, well-known among developers, is an open-source graphical library used to create graphical user interfaces (GUIs). It provides a wide range of widgets and controls for developing modern applications with attractive and responsive interfaces. In **Vixen Shell**, GTK3 is primarily used for window management.
 
-- Before proceeding with the installation, ensure that Yarn is installed on your system. You can check if Yarn is installed by running the following command in your terminal:
+- [**WebKitGTK (or GTKWebKit2)**](https://webkitgtk.org/): WebKitGTK is a version of the WebKit rendering engine adapted for integration with GTK. WebKit is used by browsers like Safari. WebKitGTK allows embedding web content into GTK applications, offering capabilities for web navigation and HTML content display. Through WebKitGTK, **Vixen Shell** can display web content to generate user interfaces.
 
-    ``` bash
-    yarn --version
-    ```
+- [**GTK Layer Shell**](https://github.com/wmww/gtk-layer-shell): GTK Layer Shell is a library enabling GTK applications to utilize the layer surfaces functionality of Wayland, a modern display server protocol for Linux. This is particularly useful for applications like panels, docks, or notifications that require precise control over their positioning and appearance on the screen.
 
-- If Yarn is not installed or if the command returns an error, you can install Yarn using the appropriate method for your system.
+- [**FastAPI**](https://fastapi.tiangolo.com/): FastAPI is a modern and high-performance web framework for building APIs with Python 3.7+ based on standard Python type annotations. It's designed to produce robust and efficient web applications. FastAPI primarily serves as the backend engine for **Vixen Shell**.
 
-    ``` bash title="Arch Linux based distribution"
-    sudo pacman -S yarn
-    ```
+### Vixen features
 
-### Vixen Shell
+With Vixen Shell, you can create your own user interface features. To generate these features, Vixen Shell requires three types of support to create the configuration:
 
-- Go to the [Vixen Shell GitHub](https://github.com/vixen-shell/vixen-shell) page and download the project archive in ZIP format, or download it [here](https://github.com/vixen-shell/vixen-shell/archive/refs/heads/main.zip).
+- A Python module to enrich the backend, if necessary.
+- A JSON file representing the user-side configuration (optional).
+- Web content coded in TypeScript using React (optional, as a Vixen Shell feature does not necessarily require a user interface).
 
-- Once the download is complete, locate the ZIP file in your download folder. Right-click on the archive and select the option to extract the files. You can also use the command line:
+These configuration files are automatically generated by the Vixen Shell manager's command line tool (vxm) when creating a new feature.
 
-    ``` bash
-    unzip vixen-shell-main.zip
-    ```
+!!! note
+    Vixen Shell requires no special dependency installations, except for Yarn, which is used to build the user interface content. This is possible because Vixen Shell operates within its own Python virtual environment.
 
-- After extracting the files, navigate to the newly created directory:
+## Similar Projects
 
-    ``` bash
-    cd vixen-shell-main
-    ```
+There are many projects similar to Vixen Shell, each with their own architecture:
 
-- In the extracted directory, run the installation script as an administrator with the following command:
+- [nwg-shell](https://nwg-piotr.github.io/nwg-shell/): A set of GTK-based tools designed to provide a feature-rich desktop environment for sway and other wlroots-based compositors.
+- [Eww](https://github.com/elkowar/eww/): The ElKowar's Wacky Widgets (eww) framework allows you to create custom widgets for your desktop, using a flexible and scriptable XML configuration.
+- [Waybar](https://github.com/Alexays/Waybar/): A highly customizable status bar for Wayland compositors, especially sway, written in C++.
 
-    ``` bash
-    sudo ./install
-    ```
-    Confirm your choice and this script will install Vixen Shell on your system.
 
-## Basic commands
+## About the Autor
 
-* `vxm --help` - Show Vixen Shell help commands.
-* `vxm --shell {open, close}` - Start / Close Vixen Shell.
-* `vxm --setup {update, remove}` - Update / Remove Vixen Shell.
+!!! note "Nohavye"
+    [![GitHub Profile](https://avatars.githubusercontent.com/u/118626273?v=4){style="width: 128px; border-radius: 50%;" align=left}](https://github.com/Nohavye)
+    I am passionate about application development and constantly seeking enriching experiences to deepen my skills. With recent training in JavaScript React Application Development, I am excited to contribute to innovative projects.
 
-## Advanced commands
-
-* `vxm --env {install, uninstall}` - Environment controls.
-* `vxm --dev {run, new}` - Development controls.
-* `vxm --features {names, add, remove}` - Features controls.
-* `vxm --frames {ids, toggle, open, close}` - Feature frames controls.
-
-## Uninstall
-
-- To uninstall Vixen Shell from your system, simply type the following command:
-
-    ``` bash
-    sudo vxm --setup remove
-    ```
-    Confirm your choice and Vixen Shell will be completely uninstalled (or not depending on your choice :smile:)
+    Thank you for taking the time to read this documentation. Your interest and support are greatly appreciated. I hope you find Vixen Shell useful. If you have any questions, feedback, or contributions, please feel free to reach out via my [GitHub profile](https://github.com/your-github-username). Happy coding!
