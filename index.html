@@ -12,8 +12,10 @@
       
       
       
+        <link rel="next" href="install/">
       
-      <link rel="icon" href="assets/vixen_logo.png">
+      
+      <link rel="icon" href="assets/vixen_logo.svg">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.26">
     
     
@@ -44,6 +46,8 @@
       
     
     
+      <link rel="stylesheet" href="stylesheets/extra.css">
+    
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -51,7 +55,16 @@
     
     
     
-  </head>
+   <link href="assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -68,7 +81,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-vixen-shell" class="md-skip">
+        <a href="#presentation" class="md-skip">
           Skip to content
         </a>
       
@@ -86,7 +99,7 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="." title="Vixen Shell Documentation" class="md-header__button md-logo" aria-label="Vixen Shell Documentation" data-md-component="logo">
       
-  <img src="assets/vixen_logo.png" alt="logo">
+  <img src="assets/vixen_logo.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -103,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Welcome to Vixen Shell
+              Welcome
             
           </span>
         </div>
@@ -114,43 +127,6 @@
     
     
     
-    
-      <label class="md-header__button md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Search">
-        
-        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
-        </button>
-      </nav>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list" role="presentation"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
     
     
       <div class="md-header__source">
@@ -192,7 +168,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="." title="Vixen Shell Documentation" class="md-nav__button md-logo" aria-label="Vixen Shell Documentation" data-md-component="logo">
       
-  <img src="assets/vixen_logo.png" alt="logo">
+  <img src="assets/vixen_logo.svg" alt="logo">
 
     </a>
     Vixen Shell Documentation
@@ -225,14 +201,12 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
   <span class="md-ellipsis">
-    Welcome to Vixen Shell
+    Welcome
   </span>
   
 
@@ -243,7 +217,7 @@
         
   
   <span class="md-ellipsis">
-    Welcome to Vixen Shell
+    Welcome
   </span>
   
 
@@ -254,8 +228,6 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
-  
-    
   
   
     <label class="md-nav__title" for="__toc">
@@ -271,13 +243,31 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Presentation">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#under-the-hood" class="md-nav__link">
+    <span class="md-ellipsis">
+      Under the Hood
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Under the Hood">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
+  <a href="#vixen-core" class="md-nav__link">
     <span class="md-ellipsis">
-      Prerequisites
+      Vixen core
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vixen-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vixen features
     </span>
   </a>
   
@@ -289,60 +279,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
+  <a href="#similar-projects" class="md-nav__link">
     <span class="md-ellipsis">
-      Installation
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Installation">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#yarn" class="md-nav__link">
-    <span class="md-ellipsis">
-      Yarn
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#vixen-shell" class="md-nav__link">
-    <span class="md-ellipsis">
-      Vixen Shell
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#basic-commands" class="md-nav__link">
-    <span class="md-ellipsis">
-      Basic commands
+      Similar Projects
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#advanced-commands" class="md-nav__link">
+  <a href="#about-the-autor" class="md-nav__link">
     <span class="md-ellipsis">
-      Advanced commands
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#uninstall" class="md-nav__link">
-    <span class="md-ellipsis">
-      Uninstall
+      About the Autor
     </span>
   </a>
   
@@ -352,6 +300,46 @@
   
 </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="install/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Install
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="commands/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Commands
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -373,8 +361,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -389,13 +375,31 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Presentation">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#under-the-hood" class="md-nav__link">
+    <span class="md-ellipsis">
+      Under the Hood
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Under the Hood">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
+  <a href="#vixen-core" class="md-nav__link">
     <span class="md-ellipsis">
-      Prerequisites
+      Vixen core
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vixen-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vixen features
     </span>
   </a>
   
@@ -407,60 +411,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
+  <a href="#similar-projects" class="md-nav__link">
     <span class="md-ellipsis">
-      Installation
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Installation">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#yarn" class="md-nav__link">
-    <span class="md-ellipsis">
-      Yarn
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#vixen-shell" class="md-nav__link">
-    <span class="md-ellipsis">
-      Vixen Shell
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#basic-commands" class="md-nav__link">
-    <span class="md-ellipsis">
-      Basic commands
+      Similar Projects
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#advanced-commands" class="md-nav__link">
+  <a href="#about-the-autor" class="md-nav__link">
     <span class="md-ellipsis">
-      Advanced commands
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#uninstall" class="md-nav__link">
-    <span class="md-ellipsis">
-      Uninstall
+      About the Autor
     </span>
   </a>
   
@@ -484,13 +446,18 @@
   
 
 
-<h1 id="welcome-to-vixen-shell"><img alt="" src="assets/vixen_logo_md.png" /> Welcome to Vixen Shell</h1>
+<h1>
+    <a class="glightbox" href="assets/vixen_logo.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="assets/vixen_logo.svg" alt="Vixen Logo" width=64 style="vertical-align: -40%; margin-right: 20px;"></a>
+    Welcome to Vixen Shell
+</h1>
+
 <h2 id="presentation">Presentation</h2>
-<p>The Vixen Shell project is an initiative dedicated to creating a highly customizable desktop environment for <a href="https://wayland.freedesktop.org/">Wayland</a> users on Linux. Designed with a focus on development, it allows users to code the various components necessary to build their own desktop environment. This project is particularly useful for users of window managers such as <a href="https://swaywm.org/">Sway</a> or <a href="https://hyprland.org/">Hyprland</a>.</p>
-<p>Vixen Shell stands out by using <a href="https://www.python.org/">Python</a> for the back-end, while the user interface (front-end) is developed with modern web technologies such as <a href="https://fr.legacy.reactjs.org/">React</a>, <a href="https://www.typescriptlang.org/">TypeScript</a> and CSS.</p>
+<p>The <strong>Vixen Shell</strong> project is an initiative dedicated to creating a highly customizable desktop environment for <a href="https://wayland.freedesktop.org/">Wayland</a> users on Linux. Designed with a focus on development, it allows users to code the various components necessary to build their own desktop environment. This project is particularly useful for users of window managers such as <a href="https://swaywm.org/">Sway</a> or <a href="https://hyprland.org/">Hyprland</a>.</p>
+<p><strong>Vixen Shell</strong> stands out by using <a href="https://www.python.org/">Python</a> for the back-end, while the user interface (front-end) is developed with modern web technologies such as <a href="https://fr.legacy.reactjs.org/">React</a>, <a href="https://www.typescriptlang.org/">TypeScript</a> and CSS.</p>
 <p>The project was initially intended for <a href="https://hyprland.org/">Hyprland</a>, but during its development, its flexibility has allowed it to be adapted to other window managers. This is why, as you will discover by reading this documentation, there are pre-existing features dedicated to <a href="https://hyprland.org/">Hyprland</a> in Vixen Shell's extras and many references and examples related to <a href="https://hyprland.org/">Hyprland</a>.</p>
-<h3 id="prerequisites">Prerequisites</h3>
-<p>Before getting started with Vixen Shell, make sure you have the following:</p>
+<details class="info">
+<summary>Prerequistes</summary>
+<p>Before getting started with <strong>Vixen Shell</strong>, make sure you have the following:</p>
 <ol>
 <li>
 <p><strong>Operating System</strong>:</p>
@@ -525,64 +492,49 @@
 </ul>
 </li>
 </ol>
-<h2 id="installation">Installation</h2>
-<h3 id="yarn">Yarn</h3>
+</details>
+<h2 id="under-the-hood">Under the Hood</h2>
+<h3 id="vixen-core">Vixen core</h3>
 <ul>
 <li>
-<p>Before proceeding with the installation, ensure that Yarn is installed on your system. You can check if Yarn is installed by running the following command in your terminal:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>yarn<span class="w"> </span>--version
-</span></code></pre></div>
+<p><a href="https://www.gtk.org/"><strong>GTK3 (GIMP Toolkit 3)</strong></a>: GTK3, well-known among developers, is an open-source graphical library used to create graphical user interfaces (GUIs). It provides a wide range of widgets and controls for developing modern applications with attractive and responsive interfaces. In <strong>Vixen Shell</strong>, GTK3 is primarily used for window management.</p>
 </li>
 <li>
-<p>If Yarn is not installed or if the command returns an error, you can install Yarn using the appropriate method for your system.</p>
-<div class="language-bash highlight"><span class="filename">Arch Linux based distribution</span><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo<span class="w"> </span>pacman<span class="w"> </span>-S<span class="w"> </span>yarn
-</span></code></pre></div>
+<p><a href="https://webkitgtk.org/"><strong>WebKitGTK (or GTKWebKit2)</strong></a>: WebKitGTK is a version of the WebKit rendering engine adapted for integration with GTK. WebKit is used by browsers like Safari. WebKitGTK allows embedding web content into GTK applications, offering capabilities for web navigation and HTML content display. Through WebKitGTK, <strong>Vixen Shell</strong> can display web content to generate user interfaces.</p>
+</li>
+<li>
+<p><a href="https://github.com/wmww/gtk-layer-shell"><strong>GTK Layer Shell</strong></a>: GTK Layer Shell is a library enabling GTK applications to utilize the layer surfaces functionality of Wayland, a modern display server protocol for Linux. This is particularly useful for applications like panels, docks, or notifications that require precise control over their positioning and appearance on the screen.</p>
+</li>
+<li>
+<p><a href="https://fastapi.tiangolo.com/"><strong>FastAPI</strong></a>: FastAPI is a modern and high-performance web framework for building APIs with Python 3.7+ based on standard Python type annotations. It's designed to produce robust and efficient web applications. FastAPI primarily serves as the backend engine for <strong>Vixen Shell</strong>.</p>
 </li>
 </ul>
-<h3 id="vixen-shell">Vixen Shell</h3>
+<h3 id="vixen-features">Vixen features</h3>
+<p>With Vixen Shell, you can create your own user interface features. To generate these features, Vixen Shell requires three types of support to create the configuration:</p>
 <ul>
-<li>
-<p>Go to the <a href="https://github.com/vixen-shell/vixen-shell">Vixen Shell GitHub</a> page and download the project archive in ZIP format, or download it <a href="https://github.com/vixen-shell/vixen-shell/archive/refs/heads/main.zip">here</a>.</p>
-</li>
-<li>
-<p>Once the download is complete, locate the ZIP file in your download folder. Right-click on the archive and select the option to extract the files. You can also use the command line:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>unzip<span class="w"> </span>vixen-shell-main.zip
-</span></code></pre></div>
-</li>
-<li>
-<p>After extracting the files, navigate to the newly created directory:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">cd</span><span class="w"> </span>vixen-shell-main
-</span></code></pre></div>
-</li>
-<li>
-<p>In the extracted directory, run the installation script as an administrator with the following command:</p>
-<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>sudo<span class="w"> </span>./install
-</span></code></pre></div>
-Confirm your choice and this script will install Vixen Shell on your system.</p>
-</li>
+<li>A Python module to enrich the backend, if necessary.</li>
+<li>A JSON file representing the user-side configuration (optional).</li>
+<li>Web content coded in TypeScript using React (optional, as a Vixen Shell feature does not necessarily require a user interface).</li>
 </ul>
-<h2 id="basic-commands">Basic commands</h2>
+<p>These configuration files are automatically generated by the Vixen Shell manager's command line tool (vxm) when creating a new feature.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Vixen Shell requires no special dependency installations, except for Yarn, which is used to build the user interface content. This is possible because Vixen Shell operates within its own Python virtual environment.</p>
+</div>
+<h2 id="similar-projects">Similar Projects</h2>
+<p>There are many projects similar to Vixen Shell, each with their own architecture:</p>
 <ul>
-<li><code>vxm --help</code> - Show Vixen Shell help commands.</li>
-<li><code>vxm --shell {open, close}</code> - Start / Close Vixen Shell.</li>
-<li><code>vxm --setup {update, remove}</code> - Update / Remove Vixen Shell.</li>
+<li><a href="https://nwg-piotr.github.io/nwg-shell/">nwg-shell</a>: A set of GTK-based tools designed to provide a feature-rich desktop environment for sway and other wlroots-based compositors.</li>
+<li><a href="https://github.com/elkowar/eww/">Eww</a>: The ElKowar's Wacky Widgets (eww) framework allows you to create custom widgets for your desktop, using a flexible and scriptable XML configuration.</li>
+<li><a href="https://github.com/Alexays/Waybar/">Waybar</a>: A highly customizable status bar for Wayland compositors, especially sway, written in C++.</li>
 </ul>
-<h2 id="advanced-commands">Advanced commands</h2>
-<ul>
-<li><code>vxm --env {install, uninstall}</code> - Environment controls.</li>
-<li><code>vxm --dev {run, new}</code> - Development controls.</li>
-<li><code>vxm --features {names, add, remove}</code> - Features controls.</li>
-<li><code>vxm --frames {ids, toggle, open, close}</code> - Feature frames controls.</li>
-</ul>
-<h2 id="uninstall">Uninstall</h2>
-<ul>
-<li>
-<p>To uninstall Vixen Shell from your system, simply type the following command:</p>
-<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>sudo<span class="w"> </span>vxm<span class="w"> </span>--setup<span class="w"> </span>remove
-</span></code></pre></div>
-Confirm your choice and Vixen Shell will be completely uninstalled (or not depending on your choice <img alt="😄" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f604.svg" title=":smile:" />)</p>
-</li>
-</ul>
+<h2 id="about-the-autor">About the Autor</h2>
+<div class="admonition note">
+<p class="admonition-title">Nohavye</p>
+<p><a href="https://github.com/Nohavye"><img align="left" alt="GitHub Profile" src="https://avatars.githubusercontent.com/u/118626273?v=4" style="width: 128px; border-radius: 50%;" /></a>
+I am passionate about application development and constantly seeking enriching experiences to deepen my skills. With recent training in JavaScript React Application Development, I am excited to contribute to innovative projects.</p>
+<p>Thank you for taking the time to read this documentation. Your interest and support are greatly appreciated. I hope you find Vixen Shell useful. If you have any questions, feedback, or contributions, please feel free to reach out via my <a href="https://github.com/your-github-username">GitHub profile</a>. Happy coding!</p>
+</div>
 
 
 
@@ -635,5 +587,7 @@ Confirm your choice and Vixen Shell will be completely uninstalled (or not depen
       <script src="assets/javascripts/bundle.ad660dcc.min.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>
