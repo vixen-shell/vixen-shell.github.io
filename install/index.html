@@ -277,6 +277,48 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#post-install" class="md-nav__link">
+    <span class="md-ellipsis">
+      Post-install
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Post-install">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#system-extra-feature" class="md-nav__link">
+    <span class="md-ellipsis">
+      System Extra Feature
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hyprland-extra-feature" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hyprland Extra Feature
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vixen-shell-startup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vixen Shell Startup
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#uninstall-vixen-shell" class="md-nav__link">
     <span class="md-ellipsis">
       Uninstall Vixen Shell
@@ -356,6 +398,48 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#post-install" class="md-nav__link">
+    <span class="md-ellipsis">
+      Post-install
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Post-install">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#system-extra-feature" class="md-nav__link">
+    <span class="md-ellipsis">
+      System Extra Feature
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hyprland-extra-feature" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hyprland Extra Feature
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vixen-shell-startup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vixen Shell Startup
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#uninstall-vixen-shell" class="md-nav__link">
     <span class="md-ellipsis">
       Uninstall Vixen Shell
@@ -424,7 +508,7 @@
 </li>
 </ol>
 <h2 id="install-vixen-shell">Install Vixen Shell</h2>
-<div class="admonition warning">
+<div class="admonition info">
 <p class="admonition-title">Yarn</p>
 <ul>
 <li>
@@ -458,13 +542,52 @@
 <p><div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>sudo<span class="w"> </span>./install
 </span></code></pre></div>
 Confirm your choice and this script will install Vixen Shell on your system.</p>
+<p>All set! Vixen Shell is installed <img alt="👍" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f44d.svg" title=":thumbsup:" /></p>
+</li>
+</ul>
+<h2 id="post-install">Post-install</h2>
+<ul>
+<li>
+<p>To start, you can verify that Vixen Shell starts correctly by running the following command in a terminal:</p>
+<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>vxm<span class="w"> </span>--shell<span class="w"> </span>open
+</span></code></pre></div>
+If everything is working properly, Vixen Shell should start without any errors.</p>
+<details class="success">
+<summary>Terminal output</summary>
+<p><a class="glightbox" href="../assets/figures/term_first_start.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="img" src="../assets/figures/term_first_start.png" style="border-radius: 5px; opacity: 80%;" /></a>
+Type CTRL+C to exit Vixen Shell ...</p>
+</details>
+</li>
+<li>
+<h3 id="system-extra-feature">System Extra Feature</h3>
+<p>Next, I recommend installing the additional 'system' feature of Vixen Shell by running the following command:</p>
+<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>vxm<span class="w"> </span>--features<span class="w"> </span>add<span class="w"> </span>--extra<span class="w"> </span>system
+</span></code></pre></div>
+This feature allows you to obtain information and execute commands on your system.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>At the moment, the 'system' feature is still relatively limited, but it will be expanded in the future.</p>
+</div>
+</li>
+<li>
+<h3 id="hyprland-extra-feature">Hyprland Extra Feature</h3>
+<p>For Hypreland user, I strongly recommend installing the additional 'hypland' feature. It will allow you to retrieve extensive information about the window manager (via hyprctl) as well as access to the UNIX socket (socket2) that continuously broadcasts Hyprland events.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>vxm<span class="w"> </span>--features<span class="w"> </span>add<span class="w"> </span>--extra<span class="w"> </span>hyprland
+</span></code></pre></div>
+</li>
+<li>
+<h3 id="vixen-shell-startup">Vixen Shell Startup</h3>
+<p>To finish, all you need to do is configure Vixen Shell to start automatically when your window manager starts. (e.g., startup script, window manager configuration file - adapt the method according to your window manager or configuration)</p>
+<p>Under Hyprland, you simply need to edit the configuration file (hyprland.conf) and add the following line to your startup section:</p>
+<div class="language-text highlight"><span class="filename">hyprland.conf</span><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>exec-once = vxm --shell open
+</span></code></pre></div>
 </li>
 </ul>
 <h2 id="uninstall-vixen-shell">Uninstall Vixen Shell</h2>
 <ul>
 <li>
 <p>To uninstall Vixen Shell from your system, simply type the following command:</p>
-<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>sudo<span class="w"> </span>vxm<span class="w"> </span>--setup<span class="w"> </span>remove
+<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>sudo<span class="w"> </span>vxm<span class="w"> </span>--setup<span class="w"> </span>remove
 </span></code></pre></div>
 Confirm your choice and Vixen Shell will be completely uninstalled (or not depending on your choice <img alt="😄" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f604.svg" title=":smile:" />)</p>
 </li>
