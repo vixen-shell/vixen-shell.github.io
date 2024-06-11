@@ -26,7 +26,7 @@ Before getting started with Vixen Shell, make sure you have the following:
 
 ## Install Vixen Shell
 
-!!! warning "Yarn"
+!!! info "Yarn"
     - Before proceeding with the installation, ensure that Yarn is installed on your system. You can check if Yarn is installed by running the following command in your terminal:
 
         ``` bash
@@ -59,6 +59,51 @@ Before getting started with Vixen Shell, make sure you have the following:
     sudo ./install
     ```
     Confirm your choice and this script will install Vixen Shell on your system.
+
+    All set! Vixen Shell is installed :thumbsup:
+
+## Post-install
+
+* To start, you can verify that Vixen Shell starts correctly by running the following command in a terminal:
+
+    ``` bash
+    vxm --shell open
+    ```
+    If everything is working properly, Vixen Shell should start without any errors.
+
+    ??? success "Terminal output"
+        ![img](./assets/figures/term_first_start.png){style="border-radius: 5px; opacity: 80%;"}
+        Type CTRL+C to exit Vixen Shell ...
+
+* ### System Extra Feature
+    
+    Next, I recommend installing the additional 'system' feature of Vixen Shell by running the following command:
+
+    ``` bash
+    vxm --features add --extra system
+    ```
+    This feature allows you to obtain information and execute commands on your system.
+
+    !!! note
+        At the moment, the 'system' feature is still relatively limited, but it will be expanded in the future.
+
+* ### Hyprland Extra Feature
+
+    For Hypreland user, I strongly recommend installing the additional 'hypland' feature. It will allow you to retrieve extensive information about the window manager (via hyprctl) as well as access to the UNIX socket (socket2) that continuously broadcasts Hyprland events.
+
+    ``` bash
+    vxm --features add --extra hyprland
+    ```
+
+* ### Vixen Shell Startup
+
+    To finish, all you need to do is configure Vixen Shell to start automatically when your window manager starts. (e.g., startup script, window manager configuration file - adapt the method according to your window manager or configuration)
+
+    Under Hyprland, you simply need to edit the configuration file (hyprland.conf) and add the following line to your startup section:
+
+    ``` title="hyprland.conf"
+    exec-once = vxm --shell open
+    ```
 
 ## Uninstall Vixen Shell
 
