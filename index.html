@@ -81,7 +81,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#presentation" class="md-skip">
+        <a href="#welcome-to-vixen-shell" class="md-skip">
           Skip to content
         </a>
       
@@ -201,6 +201,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -229,6 +231,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -256,18 +260,18 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#vixen-core" class="md-nav__link">
+  <a href="#vixen-shell-core" class="md-nav__link">
     <span class="md-ellipsis">
-      Vixen core
+      Vixen Shell Core
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#vixen-features" class="md-nav__link">
+  <a href="#vixen-shell-features" class="md-nav__link">
     <span class="md-ellipsis">
-      Vixen features
+      Vixen Shell Features
     </span>
   </a>
   
@@ -331,6 +335,26 @@
   
   
     <li class="md-nav__item">
+      <a href="features/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Features
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="commands/" class="md-nav__link">
         
   
@@ -361,6 +385,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -388,18 +414,18 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#vixen-core" class="md-nav__link">
+  <a href="#vixen-shell-core" class="md-nav__link">
     <span class="md-ellipsis">
-      Vixen core
+      Vixen Shell Core
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#vixen-features" class="md-nav__link">
+  <a href="#vixen-shell-features" class="md-nav__link">
     <span class="md-ellipsis">
-      Vixen features
+      Vixen Shell Features
     </span>
   </a>
   
@@ -446,16 +472,12 @@
   
 
 
-<h1>
-    <a class="glightbox" href="assets/vixen_logo.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="assets/vixen_logo.svg" alt="Vixen Logo" width=64 style="vertical-align: -40%; margin-right: 20px;"></a>
-    Welcome to Vixen Shell
-</h1>
-
+<h1 id="welcome-to-vixen-shell"><a class="glightbox" href="assets/vixen_logo.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="vixen logo" src="assets/vixen_logo.svg" style="vertical-align: -40%; margin-right: 10px;" width="64" /></a> Welcome to Vixen Shell</h1>
 <h2 id="presentation">Presentation</h2>
 <p>The <strong>Vixen Shell</strong> project is an initiative dedicated to creating a highly customizable desktop environment for <a href="https://wayland.freedesktop.org/">Wayland</a> users on Linux. Designed with a focus on development, it allows users to code the various components necessary to build their own desktop environment. This project is particularly useful for users of window managers such as <a href="https://swaywm.org/">Sway</a> or <a href="https://hyprland.org/">Hyprland</a>.</p>
 <p><strong>Vixen Shell</strong> stands out by using <a href="https://www.python.org/">Python</a> for the back-end, while the user interface (front-end) is developed with modern web technologies such as <a href="https://fr.legacy.reactjs.org/">React</a>, <a href="https://www.typescriptlang.org/">TypeScript</a> and CSS.</p>
 <p>The project was initially intended for <a href="https://hyprland.org/">Hyprland</a>, but during its development, its flexibility has allowed it to be adapted to other window managers. This is why, as you will discover by reading this documentation, there are pre-existing features dedicated to <a href="https://hyprland.org/">Hyprland</a> in Vixen Shell's extras and many references and examples related to <a href="https://hyprland.org/">Hyprland</a>.</p>
-<details class="info">
+<details class="quote">
 <summary>Prerequistes</summary>
 <p>Before getting started with <strong>Vixen Shell</strong>, make sure you have the following:</p>
 <ol>
@@ -474,7 +496,7 @@
 <li>
 <p><strong>Languages and Technologies</strong>:</p>
 <ul>
-<li><strong>Python</strong>: Ensure Python is installed (version 3.8 or higher).</li>
+<li><strong>Python</strong>: Ensure Python is installed (version 3.11.7 or higher).</li>
 <li><strong>yarn</strong>: For managing dependencies and building front-end components.</li>
 </ul>
 </li>
@@ -493,8 +515,12 @@
 </li>
 </ol>
 </details>
+<div class="admonition info">
+<p class="admonition-title">Version 1.0.0b1</p>
+<p>Currently, <strong>Vixen Shell</strong> is in <strong>Beta</strong>. Installing it should not pose any particular risks to your system. Your feedback would be extremely valuable to me if you are interested in this project.</p>
+</div>
 <h2 id="under-the-hood">Under the Hood</h2>
-<h3 id="vixen-core">Vixen core</h3>
+<h3 id="vixen-shell-core">Vixen Shell Core</h3>
 <ul>
 <li>
 <p><a href="https://www.gtk.org/"><strong>GTK3 (GIMP Toolkit 3)</strong></a>: GTK3, well-known among developers, is an open-source graphical library used to create graphical user interfaces (GUIs). It provides a wide range of widgets and controls for developing modern applications with attractive and responsive interfaces. In <strong>Vixen Shell</strong>, GTK3 is primarily used for window management.</p>
@@ -509,10 +535,10 @@
 <p><a href="https://fastapi.tiangolo.com/"><strong>FastAPI</strong></a>: FastAPI is a modern and high-performance web framework for building APIs with Python 3.7+ based on standard Python type annotations. It's designed to produce robust and efficient web applications. FastAPI primarily serves as the backend engine for <strong>Vixen Shell</strong>.</p>
 </li>
 </ul>
-<h3 id="vixen-features">Vixen features</h3>
+<h3 id="vixen-shell-features">Vixen Shell Features</h3>
 <p>With Vixen Shell, you can create your own user interface features. To generate these features, Vixen Shell requires three types of support to create the configuration:</p>
 <ul>
-<li>A Python module to enrich the backend, if necessary.</li>
+<li>A Python module to define root configuration and to enrich the backend if necessary.</li>
 <li>A JSON file representing the user-side configuration (optional).</li>
 <li>Web content coded in TypeScript using React (optional, as a Vixen Shell feature does not necessarily require a user interface).</li>
 </ul>
