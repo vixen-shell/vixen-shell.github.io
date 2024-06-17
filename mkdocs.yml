@@ -4,12 +4,17 @@ site_url: https://vixen-shell.github.io
 nav:
   - Welcome: index.md
   - Install: install.md
+  - Features:
+    - Introduction: features/intro.md
+    - Manage: features/manage.md
   - Commands: commands.md
 
 theme:
   name: material
   logo: assets/vixen_logo.svg
   favicon: assets/vixen_logo.svg
+  icon:
+    annotation: material/plus-circle
   palette:
     scheme: slate
     primary: black
@@ -29,15 +34,19 @@ markdown_extensions:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - attr_list
+  - md_in_html
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
-  - attr_list
-  - md_in_html
   - admonition
   - pymdownx.details
+  - def_list
 
 plugins:
+  - search
   - glightbox:
       touchNavigation: true
       loop: false
@@ -51,6 +60,6 @@ plugins:
       caption_position: bottom
       background: white
       shadow: true
-      manual: false
+      manual: true
       
 repo_url: https://github.com/vixen-shell

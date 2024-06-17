@@ -1,7 +1,4 @@
-<h1>
-    <img src="assets/vixen_logo.svg" alt="Vixen Logo" width=64 style="vertical-align: -40%; margin-right: 20px;">
-    Welcome to Vixen Shell
-</h1>
+# ![vixen logo](assets/vixen_logo.svg){ width=64 style="vertical-align: -40%; margin-right: 10px;" } Welcome to Vixen Shell
 
 ## Presentation
 
@@ -11,7 +8,7 @@ The **Vixen Shell** project is an initiative dedicated to creating a highly cust
 
 The project was initially intended for [Hyprland](https://hyprland.org/), but during its development, its flexibility has allowed it to be adapted to other window managers. This is why, as you will discover by reading this documentation, there are pre-existing features dedicated to [Hyprland](https://hyprland.org/) in Vixen Shell's extras and many references and examples related to [Hyprland](https://hyprland.org/).
 
-??? info "Prerequistes"
+??? quote "Prerequistes"
     Before getting started with **Vixen Shell**, make sure you have the following:
 
     1. **Operating System**:
@@ -21,7 +18,7 @@ The project was initially intended for [Hyprland](https://hyprland.org/), but du
         - Sway, Hyprland, or any other window manager compatible with Wayland.
 
     3. **Languages and Technologies**:
-        - **Python**: Ensure Python is installed (version 3.8 or higher).
+        - **Python**: Ensure Python is installed (version 3.11 or higher).
         - **yarn**: For managing dependencies and building front-end components.
 
     4. **Development Tools**:
@@ -31,25 +28,63 @@ The project was initially intended for [Hyprland](https://hyprland.org/), but du
     5. **Permissions and Access**:
         - Administrator or superuser access to install certain dependencies and perform system configurations.
 
+!!! info "Version 1.0.0b1"
+    Currently, **Vixen Shell** is in **Beta**. Installing it should not pose any particular risks to your system. Your feedback would be extremely valuable to me if you are interested in this project.
+
+<div class="grid cards" markdown style="padding: 5%;">
+
+-   ![linux icon](#){src="assets/icons/linux.svg" width=32 style="vertical-align: -40%; margin-right: 10px; border-radius: 5px;"} __Linux__
+
+    ---
+
+    The free and open-source operating system for everyone.
+    
+-   ![python icon](#){src="assets/icons/python.svg" width=32 style="vertical-align: -40%; margin-right: 10px;"} __Python__
+
+    ---
+
+    Python is a programming language that lets you work quickly and integrate systems more effectively.
+
+    [:octicons-arrow-right-24: Visit](https://www.python.org/)
+
+
+-   ![typescript icon](#){src="assets/icons/typescript.svg" width=32 style="vertical-align: -40%; margin-right: 10px;"} __TypeScript__
+
+    ---
+
+    TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.
+
+    [:octicons-arrow-right-24: Visit](https://www.typescriptlang.org/)
+
+-   ![react icon](#){src="assets/icons/react.svg" width=32 style="vertical-align: -40%; margin-right: 10px;"} __React__
+
+    ---
+
+    A JavaScript library for building user interfaces.
+
+    [:octicons-arrow-right-24: Visit](https://fr.legacy.reactjs.org/)
+
+</div>
+
 ## Under the Hood
 
-### Vixen core
+### Vixen Shell Core
 
-- [**GTK3 (GIMP Toolkit 3)**](https://www.gtk.org/): GTK3, well-known among developers, is an open-source graphical library used to create graphical user interfaces (GUIs). It provides a wide range of widgets and controls for developing modern applications with attractive and responsive interfaces. In **Vixen Shell**, GTK3 is primarily used for window management.
+- **[GTK3 (GIMP Toolkit 3)](https://www.gtk.org/):** GTK3, well-known among developers, is an open-source graphical library used to create graphical user interfaces (GUIs). It provides a wide range of widgets and controls for developing modern applications with attractive and responsive interfaces. In **Vixen Shell**, GTK3 is primarily used for window management.
 
-- [**WebKitGTK (or GTKWebKit2)**](https://webkitgtk.org/): WebKitGTK is a version of the WebKit rendering engine adapted for integration with GTK. WebKit is used by browsers like Safari. WebKitGTK allows embedding web content into GTK applications, offering capabilities for web navigation and HTML content display. Through WebKitGTK, **Vixen Shell** can display web content to generate user interfaces.
+- **[WebKitGTK (or GTKWebKit2)](https://webkitgtk.org/):** WebKitGTK is a version of the WebKit rendering engine adapted for integration with GTK. WebKit is used by browsers like Safari. WebKitGTK allows embedding web content into GTK applications, offering capabilities for web navigation and HTML content display. Through WebKitGTK, **Vixen Shell** can display web content to generate user interfaces.
 
-- [**GTK Layer Shell**](https://github.com/wmww/gtk-layer-shell): GTK Layer Shell is a library enabling GTK applications to utilize the layer surfaces functionality of Wayland, a modern display server protocol for Linux. This is particularly useful for applications like panels, docks, or notifications that require precise control over their positioning and appearance on the screen.
+- **[GTK Layer Shell](https://github.com/wmww/gtk-layer-shell):** GTK Layer Shell is a library enabling GTK applications to utilize the layer surfaces functionality of Wayland, a modern display server protocol for Linux. This is particularly useful for applications like panels, docks, or notifications that require precise control over their positioning and appearance on the screen.
 
-- [**FastAPI**](https://fastapi.tiangolo.com/): FastAPI is a modern and high-performance web framework for building APIs with Python 3.7+ based on standard Python type annotations. It's designed to produce robust and efficient web applications. FastAPI primarily serves as the backend engine for **Vixen Shell**.
+- **[FastAPI](https://fastapi.tiangolo.com/):** FastAPI is a modern and high-performance web framework for building APIs with Python 3.7+ based on standard Python type annotations. It's designed to produce robust and efficient web applications. FastAPI primarily serves as the backend engine for **Vixen Shell**.
 
-### Vixen features
+### Vixen Shell Features
 
-With Vixen Shell, you can create your own user interface features. To generate these features, Vixen Shell requires three types of support to create the configuration:
+With Vixen Shell, you can create your own user interface features. To generate these features, Vixen Shell requires two types of support to create the configuration:
 
-- A Python module to enrich the backend, if necessary.
-- A JSON file representing the user-side configuration (optional).
-- Web content coded in TypeScript using React (optional, as a Vixen Shell feature does not necessarily require a user interface).
+- **[Python](https://www.python.org/):** A Python module will generate the root configuration for your feature and, if necessary, enrich the backend with customized data and actions.
+
+- **[TypeScript](https://www.typescriptlang.org/):** The user interface will be implemented in TypeScript using the React framework.
 
 These configuration files are automatically generated by the Vixen Shell manager's command line tool (vxm) when creating a new feature.
 

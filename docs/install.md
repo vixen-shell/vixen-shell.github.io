@@ -1,30 +1,26 @@
-<h1>
-  <img src="../assets/vixen_logo.svg" alt="Vixen Logo" width=64 style="vertical-align: -40%; margin-right: 20px;">
-  Install Vixen Shell
-</h1>
+# ![vixen logo](assets/vixen_logo.svg){ width=64 style="vertical-align: -40%; margin-right: 10px;" } Install Vixen Shell
 
-### Prerequisites
+??? quote "Prerequistes"
+    Before getting started with **Vixen Shell**, make sure you have the following:
 
-Before getting started with Vixen Shell, make sure you have the following:
+    1. **Operating System**:
+        - A Linux distribution compatible with Wayland (e.g., Ubuntu, Fedora, Arch Linux, Manjaro Linux).
 
-1. **Operating System**:
-    - A Linux distribution compatible with Wayland (e.g., Ubuntu, Fedora, Arch Linux, [Manjaro Linux](https://manjaro.org/)).
+    2. **Window Manager**:
+        - Sway, Hyprland, or any other window manager compatible with Wayland.
 
-2. **Window Manager**:
-    - Sway, Hyprland, or any other window manager compatible with Wayland.
+    3. **Languages and Technologies**:
+        - **Python**: Ensure Python is installed (version 3.11 or higher).
+        - **yarn**: For managing dependencies and building front-end components.
 
-3. **Languages and Technologies**:
-    - **Python**: Ensure Python is installed (version 3.8 or higher).
-    - **yarn**: For managing dependencies and building front-end components.
+    4. **Development Tools**:
+        - A code editor or IDE (Visual Studio Code is recommended).
+        - Git for version control (Recommended).
 
-4. **Development Tools**:
-    - A code editor or IDE (Visual Studio Code is recommended).
-    - Git for version control (Recommended).
+    5. **Permissions and Access**:
+        - Administrator or superuser access to install certain dependencies and perform system configurations.
 
-5. **Permissions and Access**:
-    - Administrator or superuser access to install certain dependencies and perform system configurations.
-
-## Install Vixen Shell
+## Install
 
 !!! info "Yarn"
     - Before proceeding with the installation, ensure that Yarn is installed on your system. You can check if Yarn is installed by running the following command in your terminal:
@@ -39,7 +35,14 @@ Before getting started with Vixen Shell, make sure you have the following:
         sudo pacman -S yarn
         ```
 
-- Go to the [Vixen Shell GitHub](https://github.com/vixen-shell/vixen-shell) page and download the project archive in ZIP format, or download it [here](https://github.com/vixen-shell/vixen-shell/archive/refs/heads/main.zip).
+- Go to the **Vixen Shell repository** and download the project archive in ZIP format.
+
+<div class="grid cards" markdown>
+
+- :simple-git: [__Vixen Shell Repository__](https://github.com/vixen-shell/vixen-shell){style="margin-left: 16px;"}
+- :octicons-download-16: [__Download Vixen Shell Archive__](https://github.com/vixen-shell/vixen-shell/archive/refs/heads/main.zip){style="margin-left: 16px;"}
+
+</div>
 
 - Once the download is complete, locate the ZIP file in your download folder. Right-click on the archive and select the option to extract the files. You can also use the command line:
 
@@ -58,9 +61,11 @@ Before getting started with Vixen Shell, make sure you have the following:
     ``` bash
     sudo ./install
     ```
-    Confirm your choice and this script will install Vixen Shell on your system.
 
-    All set! Vixen Shell is installed :thumbsup:
+- Confirm your choice and this script will install Vixen Shell on your system.
+
+    ??? terminal_success "All set! Vixen Shell is installed."
+        ![img](./assets/figures/term_valid_setup.png)
 
 ## Post-install
 
@@ -69,15 +74,13 @@ Before getting started with Vixen Shell, make sure you have the following:
     ``` bash
     vxm --shell open
     ```
-    If everything is working properly, Vixen Shell should start without any errors.
-
-    ??? success "Terminal output"
-        ![img](./assets/figures/term_first_start.png){style="border-radius: 5px; opacity: 80%;"}
+    ??? terminal_success "If everything is working properly, Vixen Shell should start without any errors."
+        ![img](./assets/figures/term_first_start.png)
         Type CTRL+C to exit Vixen Shell ...
 
 * ### System Extra Feature
     
-    Next, I recommend installing the additional 'system' feature of Vixen Shell by running the following command:
+    Next, I recommend installing the additional **system** feature of Vixen Shell by running the following command:
 
     ``` bash
     vxm --features add --extra system
@@ -89,7 +92,7 @@ Before getting started with Vixen Shell, make sure you have the following:
 
 * ### Hyprland Extra Feature
 
-    For Hypreland user, I strongly recommend installing the additional 'hypland' feature. It will allow you to retrieve extensive information about the window manager (via hyprctl) as well as access to the UNIX socket (socket2) that continuously broadcasts Hyprland events.
+    For Hypreland user, I strongly recommend installing the additional **hypland** feature. It will allow you to retrieve extensive information about the window manager as well as access to the UNIX socket that continuously broadcasts Hyprland events.
 
     ``` bash
     vxm --features add --extra hyprland
@@ -112,4 +115,8 @@ Before getting started with Vixen Shell, make sure you have the following:
     ``` bash
     sudo vxm --setup remove
     ```
-    Confirm your choice and Vixen Shell will be completely uninstalled (or not depending on your choice :smile:)
+
+- Confirm your choice ...
+
+    ??? terminal_success "Of course, Vixen Shell will be completely uninstalled."
+        ![img](./assets/figures/term_valid_setup_rm.png)
