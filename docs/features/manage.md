@@ -1,6 +1,6 @@
 # ![vixen logo](../assets/vixen_logo.svg){ width=64 style="vertical-align: -40%; margin-right: 10px;" } Vixen Shell Features
 
-## Create a feature
+## Create a feature project
 
 Creating a new feature with Vixen Shell is similar to starting a development project. The `vxm` command-line tool provides the necessary commands for managing these projects.
 
@@ -19,11 +19,13 @@ Creating a new feature with Vixen Shell is similar to starting a development pro
         ![img](../assets/figures/term_valid_new_feat.png)
         Here we have just created a development project for a Vixen Shell feature without a front-end base.
 
-    !!! info "Now you can open your project using your preferred IDE or text editor."
-        I personally recommend using Visual Studio Code because it comes with integrated configuration by Vixen Shell for development projects, providing autocomplete to enhance your workflow.
+    A new folder named `vx-feature-[feature name]` has just been created, containing the necessary files for editing your new feature.
 
-    !!! info "You can choose between two types of features."
+    !!! quote "You can choose between two types of features."
         You can choose between two types of features: **with** or **without** front-end user interfaces. To do this, simply answer *'yes'* or *'no'* to the second question *'Would you like to include a front-end base in your project?'*.
+
+    !!! tip "Now you can open your project using your preferred IDE or text editor."
+        I personally recommend using Visual Studio Code because it comes with integrated configuration by Vixen Shell for development projects, providing autocomplete to enhance your workflow.
 
 After creating your project, you can launch it in development mode to visualize and test the outcome of your work.
 
@@ -38,6 +40,9 @@ cd vx-feature-[feature name]
 ``` bash
 vxm --dev run
 ```
+
+## Add a Feature to Vixen Shell
+
 
 !!! files "Project tree structure"
     * :fontawesome-solid-caret-down:![folder](../assets/places/folder-app-open.svg)vx-feature-[feature name]

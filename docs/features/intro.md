@@ -51,10 +51,10 @@ To generate these features, Vixen Shell requires two main types of support to cr
 
 <div class="grid" markdown>
 
-[__Create a New Feature__](manage.md/#create-a-feature)
+[__Create a Feature Project__](manage.md/#create-a-feature-project)
 { .card }
 
-[__Add a Feature to Vixen Shell__]()
+[__Add a Feature to Vixen Shell__](manage.md/#add-a-feature-to-vixen-shell)
 { .card }
 
 </div>

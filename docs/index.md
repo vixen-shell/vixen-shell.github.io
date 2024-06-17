@@ -31,7 +31,7 @@ The project was initially intended for [Hyprland](https://hyprland.org/), but du
 !!! info "Version 1.0.0b1"
     Currently, **Vixen Shell** is in **Beta**. Installing it should not pose any particular risks to your system. Your feedback would be extremely valuable to me if you are interested in this project.
 
-<div class="grid cards" markdown style="padding: 5%;">
+<div class="grid cards" markdown>
 
 -   ![linux icon](#){src="assets/icons/linux.svg" width=32 style="vertical-align: -40%; margin-right: 10px; border-radius: 5px;"} __Linux__
 

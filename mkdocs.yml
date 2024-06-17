@@ -5,8 +5,8 @@ nav:
   - Welcome: index.md
   - Install: install.md
   - Features:
-    - Introduction: features/intro.md
-    - Manage: features/manage.md
+    - Features Introduction: features/intro.md
+    - Manage Features: features/manage.md
   - Commands: commands.md
 
 theme:
