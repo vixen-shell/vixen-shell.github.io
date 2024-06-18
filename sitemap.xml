@@ -2,27 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://vixen-shell.github.io/</loc>
-         <lastmod>2024-06-17</lastmod>
+         <lastmod>2024-06-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://vixen-shell.github.io/commands/</loc>
-         <lastmod>2024-06-17</lastmod>
+         <lastmod>2024-06-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://vixen-shell.github.io/install/</loc>
-         <lastmod>2024-06-17</lastmod>
+         <lastmod>2024-06-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://vixen-shell.github.io/features/intro/</loc>
-         <lastmod>2024-06-17</lastmod>
+         <lastmod>2024-06-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://vixen-shell.github.io/features/manage/</loc>
-         <lastmod>2024-06-17</lastmod>
+         <lastmod>2024-06-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://vixen-shell.github.io/features/project/</loc>
+         <lastmod>2024-06-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

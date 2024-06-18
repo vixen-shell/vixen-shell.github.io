@@ -14,7 +14,7 @@
         <link rel="prev" href="../intro/">
       
       
-        <link rel="next" href="../../commands/">
+        <link rel="next" href="../project/">
       
       
       <link rel="icon" href="../../assets/vixen_logo.svg">
@@ -386,7 +386,7 @@
         <li class="md-nav__item">
   <a href="#create-a-feature-project" class="md-nav__link">
     <span class="md-ellipsis">
-      Create a feature project
+      Create a Feature Project
     </span>
   </a>
   
@@ -401,10 +401,40 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#remove-a-feature-to-vixen-shell" class="md-nav__link">
+    <span class="md-ellipsis">
+      Remove a Feature to Vixen Shell
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../project/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Feature Project
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -466,7 +496,7 @@
         <li class="md-nav__item">
   <a href="#create-a-feature-project" class="md-nav__link">
     <span class="md-ellipsis">
-      Create a feature project
+      Create a Feature Project
     </span>
   </a>
   
@@ -476,6 +506,15 @@
   <a href="#add-a-feature-to-vixen-shell" class="md-nav__link">
     <span class="md-ellipsis">
       Add a Feature to Vixen Shell
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remove-a-feature-to-vixen-shell" class="md-nav__link">
+    <span class="md-ellipsis">
+      Remove a Feature to Vixen Shell
     </span>
   </a>
   
@@ -500,7 +539,7 @@
 
 
 <h1 id="vixen-shell-features"><img alt="vixen logo" src="../../assets/vixen_logo.svg" style="vertical-align: -40%; margin-right: 10px;" width="64" /> Vixen Shell Features</h1>
-<h2 id="create-a-feature-project">Create a feature project</h2>
+<h2 id="create-a-feature-project">Create a Feature Project</h2>
 <p>Creating a new feature with Vixen Shell is similar to starting a development project. The <code>vxm</code> command-line tool provides the necessary commands for managing these projects.</p>
 <ul>
 <li>
@@ -521,8 +560,8 @@ Here we have just created a development project for a Vixen Shell feature withou
 </div>
 <p>A new folder named <code>vx-feature-[feature name]</code> has just been created, containing the necessary files for editing your new feature.</p>
 <div class="admonition quote">
-<p class="admonition-title">You can choose between two types of features.</p>
-<p>You can choose between two types of features: <strong>with</strong> or <strong>without</strong> front-end user interfaces. To do this, simply answer <em>'yes'</em> or <em>'no'</em> to the second question <em>'Would you like to include a front-end base in your project?'</em>.</p>
+<p class="admonition-title">You can choose between two types of features:</p>
+<p><strong>With</strong> or <strong>without</strong> front-end user interfaces. To do this, simply answer <em>'yes'</em> or <em>'no'</em> to the second question <em>'Would you like to include a front-end base in your project?'</em>.</p>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Now you can open your project using your preferred IDE or text editor.</p>
@@ -544,32 +583,36 @@ Here we have just created a development project for a Vixen Shell feature withou
 </li>
 </ul>
 <h2 id="add-a-feature-to-vixen-shell">Add a Feature to Vixen Shell</h2>
-<div class="admonition files">
-<p class="admonition-title">Project tree structure</p>
+<p>Once your feature is complete or when you are satisfied with the work done, you can integrate it into Vixen Shell.</p>
 <ul>
-<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9S301 191.9 288 191.9L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg></span><img alt="folder" src="../../assets/places/folder-app-open.svg" />vx-feature-[feature name]<ul>
-<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9S301 191.9 288 191.9L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg></span><img alt="folder" src="../../assets/places/folder-open.svg" />.vscode<ul>
-<li><img alt="file" src="../../assets/places/json.svg" />settings.json</li>
-</ul>
+<li>
+<p>To do this, type the following command in the directory of your project for this feature:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>sudo<span class="w"> </span>vxm<span class="w"> </span>--features<span class="w"> </span>add
+</span></code></pre></div>
 </li>
-<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9S301 191.9 288 191.9L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg></span><img alt="folder" src="../../assets/places/folder-open.svg" />root<ul>
-<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9S63.9 115 63.9 128v256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z"/></svg></span><img alt="folder" src="../../assets/places/folder-open.svg" />[feature name]<ul>
-<li><img alt="file" src="../../assets/places/python.svg" />__init__.py</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9S301 191.9 288 191.9L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg></span><img alt="folder" src="../../assets/places/folder-open.svg" />user<ul>
-<li><img alt="file" src="../../assets/places/json.svg" />[feature name].json</li>
-</ul>
-</li>
-<li><img alt="file" src="../../assets/places/git.svg" />.gitignore</li>
-<li><img alt="file" src="../../assets/places/certificate.svg" />LICENSE</li>
-<li><img alt="file" src="../../assets/places/readme.svg" />README.md</li>
-</ul>
-</li>
-</ul>
+<li>
+<p>After confirming your choice, you should see the following output in your terminal:</p>
+<div class="admonition terminal_success">
+<p class="admonition-title">Your feature has just been integrated into Vixen Shell !</p>
+<p><img alt="img" src="../../assets/figures/term_valid_add_feat.png" /></p>
 </div>
+</li>
+</ul>
+<p>Now, your feature will be loaded at the launch of Vixen Shell and accessible through the functions and interfaces you have chosen to include.</p>
+<h2 id="remove-a-feature-to-vixen-shell">Remove a Feature to Vixen Shell</h2>
+<p>Similarly, it is possible to remove a feature from Vixen Shell.</p>
+<ul>
+<li>
+<p>To do this, simply type the following command in a terminal:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>sudo<span class="w"> </span>vxm<span class="w"> </span>--features<span class="w"> </span>remove
+</span></code></pre></div>
+<div class="admonition terminal_success">
+<p class="admonition-title">Feature removed successfully !</p>
+<p><img alt="img" src="../../assets/figures/term_valid_remove_feat.png" /></p>
+</div>
+</li>
+</ul>
+<p>After typing the name of the feature to be removed and confirming your choice, the feature in question will be unloaded from Vixen Shell and removed.</p>
 
 
 
